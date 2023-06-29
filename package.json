@@ -1,0 +1,41 @@
+{
+  "name": "api-d8me-live",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A d8me.live API application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@offset-dev/strapi-calendar": "^0.0.10",
+    "@strapi/plugin-graphql": "^4.11.3",
+    "@strapi/plugin-i18n": "4.11.3",
+    "@strapi/plugin-users-permissions": "4.11.3",
+    "@strapi/provider-email-mailgun": "^4.11.3",
+    "@strapi/provider-email-nodemailer": "^4.11.3",
+    "@strapi/provider-email-sendgrid": "^4.11.3",
+    "@strapi/provider-upload-cloudinary": "^4.11.3",
+    "@strapi/strapi": "4.11.3",
+    "pg": "8.8.0",
+    "strapi-google-auth": "^0.1.2",
+    "strapi-paypal": "^1.1.0",
+    "strapi-plugin-custom-api": "^1.0.4",
+    "strapi-plugin-passwordless": "^4.0.12",
+    "strapi-stripe": "^3.4.1"
+  },
+  "author": {
+    "name": "Eddie Villanueva"
+  },
+  "strapi": {
+    "uuid": "467907dc-1847-483d-b769-053cef7fb18c"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
