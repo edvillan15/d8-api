@@ -4,7 +4,8 @@
   "info": {
     "singularName": "subscription",
     "pluralName": "subscriptions",
-    "displayName": "Subscription"
+    "displayName": "Subscription",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -25,6 +26,15 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "subscriptions"
+    },
+    "data": {
+      "type": "json"
+    },
+    "response": {
+      "type": "json"
+    },
+    "body": {
+      "type": "json"
     }
   }
 }
