@@ -1,0 +1,577 @@
+{
+  "name": "Editor",
+  "code": "strapi-editor",
+  "description": "Editors can manage and publish contents including those of other users.",
+  "permissions": [
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::ai-character.ai-character",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "role",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::ai-character.ai-character",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "role",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::ai-character.ai-character",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "role",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::ai-response.ai-response",
+      "properties": {
+        "fields": [
+          "message",
+          "response"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::ai-response.ai-response",
+      "properties": {
+        "fields": [
+          "message",
+          "response"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::ai-response.ai-response",
+      "properties": {
+        "fields": [
+          "message",
+          "response"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::appointment.appointment",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "description",
+          "attendee",
+          "date",
+          "location",
+          "date_ends"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::appointment.appointment",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "description",
+          "attendee",
+          "date",
+          "location",
+          "date_ends"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::appointment.appointment",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "description",
+          "attendee",
+          "date",
+          "location",
+          "date_ends"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "description",
+          "parent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "description",
+          "parent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "description",
+          "parent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::conversation.conversation",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "messages",
+          "receipients"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::conversation.conversation",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "messages",
+          "receipients"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::conversation.conversation",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "messages",
+          "receipients"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::industry.industry",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::industry.industry",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::industry.industry",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::message.message",
+      "properties": {
+        "fields": [
+          "message",
+          "slug",
+          "conversation",
+          "sender"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::message.message",
+      "properties": {
+        "fields": [
+          "message",
+          "slug",
+          "conversation",
+          "sender"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::message.message",
+      "properties": {
+        "fields": [
+          "message",
+          "slug",
+          "conversation",
+          "sender"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::occupation.occupation",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "role",
+          "description",
+          "industries"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::occupation.occupation",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "role",
+          "description",
+          "industries"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::occupation.occupation",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "role",
+          "description",
+          "industries"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "heading",
+          "subHeading",
+          "content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "heading",
+          "subHeading",
+          "content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::page.page",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "heading",
+          "subHeading",
+          "content"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "description",
+          "price",
+          "subscription"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "description",
+          "price",
+          "subscription"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::product.product",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "description",
+          "price",
+          "subscription"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::room.room",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "type",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::room.room",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "type",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::room.room",
+      "properties": {
+        "fields": [
+          "title",
+          "slug",
+          "type",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::subscription.subscription",
+      "properties": {
+        "fields": [
+          "name",
+          "product",
+          "users_permissions_user",
+          "data",
+          "response",
+          "body"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::subscription.subscription",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::subscription.subscription",
+      "properties": {
+        "fields": [
+          "name",
+          "product",
+          "users_permissions_user",
+          "data",
+          "response",
+          "body"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::subscription.subscription",
+      "properties": {
+        "fields": [
+          "name",
+          "product",
+          "users_permissions_user",
+          "data",
+          "response",
+          "body"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "plugin::passwordless.token",
+      "properties": {
+        "fields": [
+          "email",
+          "body",
+          "context",
+          "login_date",
+          "is_active"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "plugin::passwordless.token",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "plugin::passwordless.token",
+      "properties": {
+        "fields": [
+          "email",
+          "body",
+          "context",
+          "login_date",
+          "is_active"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "plugin::passwordless.token",
+      "properties": {
+        "fields": [
+          "email",
+          "body",
+          "context",
+          "login_date",
+          "is_active"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.copy-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.download",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.configure-view",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    }
+  ]
+}

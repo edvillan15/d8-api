@@ -1,0 +1,13 @@
+{
+  "key": "plugin_strapi-paypal_paypalSetting",
+  "value": {
+    "isLiveMode": true,
+    "checkoutSuccessUrl": "http://localhost:1337/api/pages/paypal-payment-success",
+    "checkoutCancelUrl": "http://localhost:1337/api/pages/paypal-payment-cancelled",
+    "currency": "USD",
+    "callbackUrl": "http://localhost:1337/api/subscriptions"
+  },
+  "type": "object",
+  "environment": "development",
+  "tag": null
+}

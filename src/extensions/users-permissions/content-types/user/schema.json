@@ -16,13 +16,13 @@
       "type": "string",
       "minLength": 3,
       "unique": true,
-      "configurable": false,
+      "configurable": true,
       "required": true
     },
     "email": {
       "type": "email",
       "minLength": 6,
-      "configurable": false,
+      "configurable": true,
       "required": true
     },
     "provider": {
@@ -32,7 +32,7 @@
     "password": {
       "type": "password",
       "minLength": 6,
-      "configurable": false,
+      "configurable": true,
       "private": true,
       "searchable": false
     },
@@ -51,12 +51,12 @@
     "confirmed": {
       "type": "boolean",
       "default": false,
-      "configurable": false
+      "configurable": true
     },
     "blocked": {
       "type": "boolean",
       "default": false,
-      "configurable": false
+      "configurable": true
     },
     "role": {
       "type": "relation",
@@ -79,6 +79,27 @@
       "relation": "manyToOne",
       "target": "api::appointment.appointment",
       "inversedBy": "attendee"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "location": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "coverImage": {
+      "type": "string"
     }
   }
 }

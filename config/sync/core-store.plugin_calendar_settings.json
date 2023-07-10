@@ -1,0 +1,25 @@
+{
+  "key": "plugin_calendar_settings",
+  "value": {
+    "collection": "api::appointment.appointment",
+    "startField": "date",
+    "endField": "date_ends",
+    "titleField": "title",
+    "colorField": "colorPicker",
+    "defaultDuration": 30,
+    "drafts": true,
+    "startHour": "0:00",
+    "endHour": "01:00",
+    "defaultView": "Month",
+    "monthView": true,
+    "weekView": true,
+    "dayView": true,
+    "todayButton": true,
+    "createButton": true,
+    "primaryColor": "#f40000",
+    "eventColor": "#c45100"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

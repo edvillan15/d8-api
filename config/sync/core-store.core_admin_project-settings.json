@@ -1,0 +1,28 @@
+{
+  "key": "core_admin_project-settings",
+  "value": {
+    "menuLogo": {
+      "name": "apple-icon-180.png",
+      "hash": "apple_icon_180_f54ed8e2b6",
+      "url": "/uploads/apple_icon_180_f54ed8e2b6.png",
+      "width": 180,
+      "height": 180,
+      "ext": ".png",
+      "size": 2.38,
+      "provider": "local"
+    },
+    "authLogo": {
+      "name": "apple-icon-180.png",
+      "hash": "apple_icon_180_bdaa09a324",
+      "url": "/uploads/apple_icon_180_bdaa09a324.png",
+      "width": 180,
+      "height": 180,
+      "ext": ".png",
+      "size": 2.38,
+      "provider": "local"
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

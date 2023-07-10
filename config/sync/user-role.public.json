@@ -1,0 +1,142 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::ai-character.ai-character.find"
+    },
+    {
+      "action": "api::ai-character.ai-character.findOne"
+    },
+    {
+      "action": "api::ai-prompt.ai-prompt.find"
+    },
+    {
+      "action": "api::ai-prompt.ai-prompt.findOne"
+    },
+    {
+      "action": "api::ai-response.ai-response.find"
+    },
+    {
+      "action": "api::ai-response.ai-response.findOne"
+    },
+    {
+      "action": "api::category.category.find"
+    },
+    {
+      "action": "api::category.category.findOne"
+    },
+    {
+      "action": "api::industry.industry.find"
+    },
+    {
+      "action": "api::industry.industry.findOne"
+    },
+    {
+      "action": "api::occupation.occupation.find"
+    },
+    {
+      "action": "api::occupation.occupation.findOne"
+    },
+    {
+      "action": "api::output.output.find"
+    },
+    {
+      "action": "api::output.output.findOne"
+    },
+    {
+      "action": "api::page.page.find"
+    },
+    {
+      "action": "api::page.page.findOne"
+    },
+    {
+      "action": "api::product.product.find"
+    },
+    {
+      "action": "api::product.product.findOne"
+    },
+    {
+      "action": "api::room.room.find"
+    },
+    {
+      "action": "api::room.room.findOne"
+    },
+    {
+      "action": "api::subscription.subscription.create"
+    },
+    {
+      "action": "api::subscription.subscription.find"
+    },
+    {
+      "action": "api::subscription.subscription.findOne"
+    },
+    {
+      "action": "plugin::content-type-builder.components.getComponent"
+    },
+    {
+      "action": "plugin::content-type-builder.components.getComponents"
+    },
+    {
+      "action": "plugin::content-type-builder.content-types.getContentType"
+    },
+    {
+      "action": "plugin::content-type-builder.content-types.getContentTypes"
+    },
+    {
+      "action": "plugin::email.email.send"
+    },
+    {
+      "action": "plugin::i18n.locales.listLocales"
+    },
+    {
+      "action": "plugin::passwordless.auth.login"
+    },
+    {
+      "action": "plugin::passwordless.auth.sendLink"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.upload"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
+    },
+    {
+      "action": "plugin::users-permissions.role.find"
+    },
+    {
+      "action": "plugin::users-permissions.role.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.user.count"
+    }
+  ]
+}

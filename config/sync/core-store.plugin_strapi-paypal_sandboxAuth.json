@@ -1,0 +1,10 @@
+{
+  "key": "plugin_strapi-paypal_sandboxAuth",
+  "value": {
+    "access_token": "A21AAKVWsz8oajLZe1omVXXwebtpHVS4Uvb45xmRXGVdNFVQvuf6qPbhk4pR6cC3hxcnALF8b1bn43HdUSgWla04EUhI7TGCw",
+    "expires_in": "2023-07-03T04:30:19.053Z"
+  },
+  "type": "object",
+  "environment": "production",
+  "tag": null
+}

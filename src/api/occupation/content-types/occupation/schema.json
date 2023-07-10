@@ -4,7 +4,8 @@
   "info": {
     "singularName": "occupation",
     "pluralName": "occupations",
-    "displayName": "Occupation"
+    "displayName": "Occupation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -38,7 +39,7 @@
           "localized": true
         }
       },
-      "type": "text"
+      "type": "string"
     },
     "description": {
       "pluginOptions": {

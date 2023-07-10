@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ai_prompts",
+  "info": {
+    "singularName": "ai-prompt",
+    "pluralName": "ai-prompts",
+    "displayName": "AI Prompt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "examples": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "adjustments": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "extra": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "character": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::occupation.occupation"
+    },
+    "output": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::output.output"
+    }
+  }
+}

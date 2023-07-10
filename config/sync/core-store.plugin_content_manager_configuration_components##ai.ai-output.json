@@ -1,0 +1,98 @@
+{
+  "key": "plugin_content_manager_configuration_components::ai.ai-output",
+  "value": {
+    "uid": "ai.ai-output",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "startContext",
+      "defaultSortBy": "startContext",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "startContext": {
+        "edit": {
+          "label": "Start Context",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "startContext",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "output": {
+        "edit": {
+          "label": "Pick Output",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "output",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "formatText": {
+        "edit": {
+          "label": "Output Format",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "formatText",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "startContext",
+        "output",
+        "formatText"
+      ],
+      "edit": [
+        [
+          {
+            "name": "startContext",
+            "size": 6
+          },
+          {
+            "name": "output",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "formatText",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
