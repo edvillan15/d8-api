@@ -1,0 +1,5 @@
+.env
+dist
+k8s
+.vercel
+export*

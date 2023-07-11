@@ -1,17 +1,21 @@
-const stripeWebhook = async (ctx) => {
+// api/controllers/webhooks.ts
+
+import { Context } from 'koa';
+
+const stripeWebhook = async (ctx: Context): Promise<void> => {
   try {
-    const eventData = ctx.request.body; // Stripe event data sent in the request payload
-    // Process the event data and perform the necessary actions (e.g., update your database, send a notification, etc.)
-    console.log('Received webhook event:', eventData);
-    // Respond with a 200 OK status to acknowledge receipt of the event
+    const requestBody = ctx.request.body; // Retrieve the data sent with the request
+    // Process the webhook payload and perform the desired actions
+    console.log('Received custom webhook:', requestBody);
+    // Respond with a success message or any other appropriate response
     ctx.send({ received: true });
   } catch (error) {
     // Handle errors, log them, or perform appropriate error handling
-    console.error('Error processing webhook event:', error);
+    console.error('Error processing custom webhook:', error);
     ctx.badRequest(error);
   }
 };
 
-module.exports = {
+export default {
   stripeWebhook,
 };

@@ -2,7 +2,7 @@
   "key": "core_admin_auth",
   "value": {
     "providers": {
-      "autoRegister": false,
+      "autoRegister": true,
       "defaultRole": null,
       "ssoLockedRoles": null
     }

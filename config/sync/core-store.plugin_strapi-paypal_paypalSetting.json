@@ -2,10 +2,10 @@
   "key": "plugin_strapi-paypal_paypalSetting",
   "value": {
     "isLiveMode": true,
-    "checkoutSuccessUrl": "http://localhost:1337/api/pages/paypal-payment-success",
-    "checkoutCancelUrl": "http://localhost:1337/api/pages/paypal-payment-cancelled",
+    "checkoutSuccessUrl": "https://apidb.d8me.live/api/pages/success",
+    "checkoutCancelUrl": "hhttps://apidb.d8me.live/api/pages/cancelled",
     "currency": "USD",
-    "callbackUrl": "http://localhost:1337/api/subscriptions"
+    "callbackUrl": "https://apidb.d8me.live/api/subscriptions"
   },
   "type": "object",
   "environment": "development",
