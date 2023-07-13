@@ -114,5 +114,5 @@ dist
 build
 .strapi-updater.json
 .vercel
-
+backup
 k8s
