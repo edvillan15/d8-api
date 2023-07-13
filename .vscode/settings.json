@@ -14,5 +14,11 @@
         "Subcription",
         "Villanueva",
         "Ziyjkxkn"
-    ]
+    ],
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/461a28b7-0ec3-40a9-a25f-27fd249e3fcf/resourceGroups/nodeRsg/providers/Microsoft.Web/sites/node-apis1",
+    "appService.deploySubpath": "."
 }
